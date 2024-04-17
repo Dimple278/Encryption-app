@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Encrypt Message</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+
+  <body class="container">
+    <h1>Encrypt Message:</h1>
+    <form method="post">
+      {% csrf_token %}
+      <textarea name="original_text" rows="4" cols="50"></textarea><br />
+      Key: <input type="number" name="key" value="5" /><br />
+
+      <input type="submit" value="Encrypt" />
+    </form>
+  </body>
+</html>

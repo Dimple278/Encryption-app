@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+
+    <meta charset="UTF-8" />
+    <title>Encrypted Message</title>
+  </head>
+  <body class="container">
+    <h1>Encrypted Message:</h1>
+    <p class="message">{{ encrypted_message }}</p>
+  </body>
+</html>
